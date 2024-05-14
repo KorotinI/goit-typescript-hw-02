@@ -14,7 +14,7 @@ const SearchBar: FC<SearchBarProps> = ({ onSearch }) => {
     ) as HTMLFormElement;
 
     if (searchValue.value === "") {
-      const notify = () => toast.error("Please enter search term!");
+      const notify = () => toast.error("Input something!");
       return notify();
     }
     onSearch(searchValue.value.toLowerCase());
@@ -27,7 +27,8 @@ const SearchBar: FC<SearchBarProps> = ({ onSearch }) => {
           className={css.searchInput}
           type="text"
           name="inputValue"
-          placeholder="Search images and photos"
+          placeholder="...
+          "
         />
         <button className={css.searchBtn} type="submit">
           Search

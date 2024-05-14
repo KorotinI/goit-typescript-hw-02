@@ -1,9 +1,8 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: #766e7265;
+    background-color: hsla(30, 12%, 94%, 0.396);
     border: 3px solid #e3dce2;
-    border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -21,13 +20,13 @@
   }
   
   .searchInput:focus {
-    border: 3px solid #e3dce2;
+    border: 3px solid #f36c0b;
     outline: transparent;
   }
   
   .searchBtn {
     width: 100px;
-    border: 3px solid #e3dce2;
+    border: 3px solid #0ab991;
     background-color: transparent;
     color: #ffffff;
     font-size: 24px;
@@ -38,5 +37,5 @@
   
   .searchBtn:hover,
   .searchBtn:focus {
-    background-color: #494040;
+    background-color: #0a984a;
   }

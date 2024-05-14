@@ -1,20 +1,20 @@
-import { Comment } from "react-loader-spinner";
+import { BallTriangle  } from "react-loader-spinner";
 import css from "./Loader.module.css";
 import { FC } from "react";
 
 const Loader: FC = () => {
   return (
     <div className={css.loader}>
-      <Comment
-        visible={true}
-        height="120"
-        width="120"
-        ariaLabel="comment-loading"
+      <BallTriangle 
+        height={100}
+        width={100}
+        radius={5}
+        color="#3aff24aa"
+        ariaLabel="ball-triangle-loading"
         wrapperStyle={{}}
-        wrapperClass="comment-wrapper"
-        color="#fff"
-        backgroundColor="#F4442E"
-      />
+        wrapperClass=""
+        visible={true}
+        />
     </div>
   );
 };
